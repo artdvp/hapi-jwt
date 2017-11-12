@@ -10,6 +10,7 @@ server.connection({
 
 server.register(require('hapi-auth-jwt'),(err) => {
     server.auth.strategy('token','jwt', {
+        // Private key set
         key: 'VRhgsdCvbngiRTybfgMNVcvSsew234mvz8Hjgvn(0544Nbvnsd',
         verifyOptions: {
             algorithms: ['HS256'],
