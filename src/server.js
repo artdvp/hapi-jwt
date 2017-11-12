@@ -2,8 +2,6 @@ import Hapi from 'hapi';
 import Knex from './knex';
 import routes from './routes'
 
-//https://lab-hapi-isphins.c9users.io
-
 const server = new Hapi.Server();
 
 server.connection({
