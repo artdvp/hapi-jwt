@@ -1,5 +1,5 @@
 
-link [site](https://scotch.io/tutorials/making-a-restful-api-with-hapi-js)
+ref : link [scotch site](https://scotch.io/tutorials/making-a-restful-api-with-hapi-js)
 
 http://api.app.com/birds (GET) - to get a list of all the public birds
 http://api.app.com/birds (POST) - to create a new bird
@@ -30,3 +30,5 @@ xxxxx.yyyyy.zzzzz
 server.js
 
 install package GUID
+
+> npm install --save node-uuid

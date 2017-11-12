@@ -4,8 +4,6 @@ import GUID from 'node-uuid';
 
 const guid = GUID.v4();
 
-
-
 const routes = [
     {
         path: '/birds',
@@ -164,7 +162,6 @@ const routes = [
                 console.log(err);
                 reply('server-side error');
             });
-            
         }
     }
     ];
