@@ -1,0 +1,105 @@
+
+chap 1 Introduction >>hapijs
+chap 2 Rounting >>hapijs
+-----------------------------------
+var Hapi = require('hapi');
+
+var server = new Hapi.Server();
+
+server.connection({
+    host: process.env.IP,
+    port: process.env.PORT
+});
+
+/*server.route({
+    method: 'GET',
+    path: '/hello',
+    handler: function(request, reply) {
+        reply('Hello World');
+    }
+});*/
+server.route({
+    method: 'GET',
+    path: '/',
+    handler : function(request,reply){
+        reply('Hello from code planet');
+    }
+});
+
+server.route({
+    method : 'GET',
+    path : '/user/{userName}',
+    handler : function(request, reply){
+        reply('Hello form art code,' + encodeURIComponent(request.params.userName) + '!');
+    }
+    
+});
+server.start(function() {
+    console.log('Server running at:', server.info.url);
+});
+
+
+-----------------------------------
+chap 3 Static content  --install inert
+var Hapi = require('hapi');
+
+var server = new Hapi.Server();
+
+server.connection({
+    host: process.env.IP,
+    port: process.env.PORT
+});
+
+/*server.route({
+    method: 'GET',
+    path: '/hello',
+    handler: function(request, reply) {
+        reply('Hello World');
+    }
+});*/
+
+server.register(require('inert'),function(err){
+    if(err){
+        throw err;
+    }
+    
+    
+    server.route({
+    method: 'GET',
+    path: '/',
+    handler : function(request,reply){
+        reply('<img src="https://source.unsplash.com/category/nature/1600x900" />');
+    }
+});
+
+server.route({
+    method: 'GET',
+    path : '/google.png',
+    handler : function(request ,reply){
+        //reply('TEST hello');
+        reply.file('google.png');
+    }
+});
+
+--------------------------------------
+chapter 4 Introduction to Views
+vision
+make views by handlebar
+
+/*server.route({
+    method : 'GET',
+    path : '/user/{userName}',
+    handler : function(request, reply){
+        reply('Hello form art code,' + encodeURIComponent(request.params.userName) + '!');
+    }
+});*/
+    
+    
+});
+
+server.start(function() {
+    console.log('Server running at:', server.info.url);
+});
+
+
+-----------------------------------
