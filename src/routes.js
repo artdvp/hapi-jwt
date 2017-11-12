@@ -51,6 +51,7 @@ const routes = [
                    const token = jwt.sign({
                        username,
                        scope: user.guid,
+                       // Private key set
                    }, 'VRhgsdCvbngiRTybfgMNVcvSsew234mvz8Hjgvn(0544Nbvnsd', {
                        algorithm: 'HS256',
                        expiresIn: '1h',
