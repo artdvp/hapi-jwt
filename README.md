@@ -10,3 +10,19 @@ install
 > npm i --save hapi mysql jsonwebtoken hapi-auth-jwt knex
 
 > npm install --save-dev babel-core babel-preset-es2015
+
+> sudo npm install -g knex
+
+> knex migrate:make Datastructure
+
+> knex migrate:latest
+
+> knex seed:make 01_Users
+
+> knex seed:make 02_Birds
+
+## Start API
+
+JWT Authentication >  JSON Web Token
+
+xxxxx.yyyyy.zzzzz
