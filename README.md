@@ -28,3 +28,5 @@ JWT Authentication >  JSON Web Token
 xxxxx.yyyyy.zzzzz
 
 server.js
+
+install package GUID
