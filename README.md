@@ -1,9 +1,11 @@
 
-ref : link [scotch site](https://scotch.io/tutorials/making-a-restful-api-with-hapi-js)
+# Hapi + Jwt + Mysql + Knex.js
 
-http://api.app.com/birds (GET) - to get a list of all the public birds
-http://api.app.com/birds (POST) - to create a new bird
-http://api.app.com/birds/:id (GET) - to get a specific bird
+ref : [link article site](https://scotch.io/tutorials/making-a-restful-api-with-hapi-js)
+
+- http://api.app.com/birds (GET) - to get a list of all the public birds
+- http://api.app.com/birds (POST) - to create a new bird
+- http://api.app.com/birds/:id (GET) - to get a specific bird
 
 install
 
@@ -23,11 +25,13 @@ install
 
 ## Start API
 
-JWT Authentication >  JSON Web Token
+> JWT Authentication >  JSON Web Token
 
-xxxxx.yyyyy.zzzzz
+> xxxxx.yyyyy.zzzzz
 
-server.js
+ref : [JWT](https://jwt.io/)
+
+> server.js
 
 install package GUID
 
